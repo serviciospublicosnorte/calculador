@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Platform';
-    src: url('/fonts/Platform-Medium.ttf') format('truetype'),
-        url('/fonts/Platform-Bold.ttf') format('truetype');
+    src: url('../fonts/Platform-Medium.ttf') format('truetype'),
+        url('../fonts/Platform-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
