@@ -46,7 +46,7 @@ function calculateVolume() {
             : `${metrostoFixed(2)}%`; // Two decimals for non-whole numbers 
                  
         resultElement.innerHTML = `
-    <div class="dato-resultado"><span class="cantidad-span" style="color: red">ATENCIÓN: la cantidad ingresada excede la capacidad del tanque</span></div>
+    <div class="dato-resultado"><img src="images/attention.png" alt="Signo de alerta"> <span class="cantidad-span" style="color: red">¡La altura ingresada excede la capacidad del tanque!</span></div>
     <div class="dato-resultado">Máxima altura<span class="QuaintitySpan" style="color: green">${metros} metros</span></div>
     <div class="dato-resultado">Capacidad del tanque<span class="QuaintitySpan" style="color: blue">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
     `;
