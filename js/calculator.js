@@ -13,9 +13,20 @@ function setupCalculator() {
 }
 
 function calculateVolume() {
-    const radius = parseFloat(document.getElementById('radius').value);
-    const length = parseFloat(document.getElementById('length').value);
-    const fluidHeight = parseFloat(document.getElementById('fluidHeight').value);
+    let radius = parseFloat(document.getElementById('radius').value);
+    let length = parseFloat(document.getElementById('length').value);
+    let fluidHeight = parseFloat(document.getElementById('fluidHeight').value);
+
+    // Check if the values are NaN and set them to 0 if they are
+    if (isNaN(radius)) {
+        radius = 0;
+    }
+    if (isNaN(length)) {
+        length = 0;
+    }
+    if (isNaN(fluidHeight)) {
+        fluidHeight = 0;
+    }
 
     // Calculate volumes
     const fullVolumeM3 = Math.PI * Math.pow(radius, 2) * length;
@@ -32,17 +43,24 @@ function calculateVolume() {
         resultElement.innerHTML = `
     <br><span class="QuaintitySpan" style="color: red">ATENCIÓN: la cantidad de ingresada excede la capacidad del tanque</span><br>
     Máxima altura<span class="QuaintitySpan" style="color: green">${(radius * 2).toFixed(2)} metros</span><br>
-    Capacidad del tanque<span class="QuaintitySpan" style="color: blue">${fullVolumeLiters.toFixed(2).toLocaleString()} litros</span>
+    Capacidad del tanque<span class="QuaintitySpan" style="color: blue">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span>
     `;
     } else {
         const percentageOccupied = (currentVolumeM3 / fullVolumeM3) * 100;
-        const formattedPercentage = percentageOccupied === 100
-            ? '100%'
-            : percentageOccupied.toFixed(2) + '%';
+        let formattedPercentage;
+
+        // Check if percentageOccupied is NaN
+        if (isNaN(percentageOccupied)) {
+            formattedPercentage = '0%'; // Set to 0% if NaN
+        } else {
+            formattedPercentage = Number.isInteger(percentageOccupied)
+                ? `${percentageOccupied.toFixed(0)}%` // No decimals for whole numbers
+                : `${percentageOccupied.toFixed(2)}%`; // Two decimals for non-whole numbers
+        }
 
         resultElement.innerHTML = `
-    Cantidad actual<span class="QuaintitySpan" style="color: blue">${currentVolumeLiters.toFixed(0).toLocaleString()} litros</span><br>
-    Capacidad total<span class="QuaintitySpan" style="color: green">${fullVolumeLiters.toFixed(0).toLocaleString()} litros</span><br>
+    Cantidad actual<span class="QuaintitySpan" style="color: blue">${currentVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span><br>
+    Capacidad total<span class="QuaintitySpan" style="color: green">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span><br>
     Porcentaje ocupado<span class="QuaintitySpan" style="color: orange">${formattedPercentage}</span>
     `;
     }
