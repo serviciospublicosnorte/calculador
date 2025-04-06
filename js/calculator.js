@@ -41,7 +41,7 @@ function calculateVolume() {
 
     if (fluidHeight > radius * 2) {
         resultElement.innerHTML = `
-    <br><span class="QuaintitySpan" style="color: red">ATENCIÓN: la cantidad de ingresada excede la capacidad del tanque</span><br>
+    <br><span class="QuaintitySpan" style="color: red">ATENCIÓN: la cantidad ingresada excede la capacidad del tanque</span><br>
     Máxima altura<span class="QuaintitySpan" style="color: green">${(radius * 2).toFixed(2)} metros</span><br>
     Capacidad del tanque<span class="QuaintitySpan" style="color: blue">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span>
     `;
