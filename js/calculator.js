@@ -31,8 +31,8 @@ function calculateVolume() {
     if (fluidHeight > radius * 2) {
         resultElement.innerHTML = `
     <br><span class="QuaintitySpan" style="color: red">ATENCIÓN: la cantidad de ingresada excede la capacidad del tanque</span><br>
-    Máxima altura: <span class="QuaintitySpan" style="color: green">${(radius * 2).toFixed(2)} metros</span><br>
-    Capacidad del tanque: <span class="QuaintitySpan" style="color: blue">${fullVolumeLiters.toFixed(2).toLocaleString()} litros</span>
+    Máxima altura<span class="QuaintitySpan" style="color: green">${(radius * 2).toFixed(2)} metros</span><br>
+    Capacidad del tanque<span class="QuaintitySpan" style="color: blue">${fullVolumeLiters.toFixed(2).toLocaleString()} litros</span>
     `;
     } else {
         const percentageOccupied = (currentVolumeM3 / fullVolumeM3) * 100;
@@ -41,9 +41,9 @@ function calculateVolume() {
             : percentageOccupied.toFixed(2) + '%';
 
         resultElement.innerHTML = `
-    Cantidad actual: <span class="QuaintitySpan" style="color: blue">${currentVolumeLiters.toFixed(0).toLocaleString()} litros</span><br>
-    Capacidad total: <span class="QuaintitySpan" style="color: green">${fullVolumeLiters.toFixed(0).toLocaleString()} litros</span><br>
-    Porcentaje ocupado: <span class="QuaintitySpan" style="color: orange">${formattedPercentage}</span>
+    Cantidad actual<span class="QuaintitySpan" style="color: blue">${currentVolumeLiters.toFixed(0).toLocaleString()} litros</span><br>
+    Capacidad total<span class="QuaintitySpan" style="color: green">${fullVolumeLiters.toFixed(0).toLocaleString()} litros</span><br>
+    Porcentaje ocupado<span class="QuaintitySpan" style="color: orange">${formattedPercentage}</span>
     `;
     }
     // Update visualization
