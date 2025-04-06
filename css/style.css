@@ -34,6 +34,7 @@ header img {
 }
 
 .calculator-container {
+    font-family: 'Platform Medium';
     margin: 0 auto;
     background-color: white;
     padding: 1rem;
