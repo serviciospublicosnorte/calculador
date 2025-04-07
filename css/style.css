@@ -227,10 +227,9 @@ canvas {
     display: flex;
     flex-direction: column;
     margin-bottom: .6rem;
-    border: #303030;
     border: .15rem solid #30303050;
     padding: 0.25rem;
-    border-radius: .25rem;
+    border-radius: 0;
     min-width: 12rem;
 }
 
