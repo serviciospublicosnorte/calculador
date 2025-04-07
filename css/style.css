@@ -44,7 +44,7 @@ header img:hover {
     justify-content: center;
     align-items: center;
     height: 37rem;
-    padding: 2rem;
+    padding: 1.5rem;
     box-sizing: border-box;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1);
     background-color: white;
@@ -111,7 +111,7 @@ label {
     justify-content: center;
     text-align: center;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: .6rem;
 }
 
 .input-group label {
@@ -163,10 +163,11 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #2980b9;gap: 0rem;
 }
 
 .results-section {
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,6 +182,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     font-size: 1.25rem;
+    margin: 0;
 }
 
 /*
@@ -218,13 +220,18 @@ canvas {
 
 .zona-calculo {
     display: flex;
-    gap: 1rem;
+    gap: 0rem;
 }
 
 .dato-resultado {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+    margin-bottom: .6rem;
+    border: #303030;
+    border: .15rem solid #30303050;
+    padding: 0.25rem;
+    border-radius: .25rem;
+    min-width: 12rem;
 }
 
 .dato-resultado img {
@@ -244,7 +251,7 @@ canvas {
 #texto-atención {
     font-size: 1.25rem;
     line-height: 1.1rem;
-    margin-top: .85rem;
+    margin-top: .55rem;
 }
 
 .footer {
