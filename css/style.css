@@ -233,11 +233,13 @@ footer {
 }
 
 #text-footer {
+    margin-top: .5rem;
     font-size: 2rem;
     margin-right: .5rem;
 }
 
 #image-footer {
+    margin-top: .5rem;
     width: 20rem;
     margin-left: .5rem;
     filter: drop-shadow(0 0 .20rem rgba(0, 0, 0, .5));
@@ -257,12 +259,13 @@ footer {
     }
 
     #text-footer {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-right: .05rem;
     }
 
     #image-footer {
         max-width: 65%;
+        margin-top: .5rem;
         margin-left: .5rem;
         filter: drop-shadow(0 0 .15rem rgba(0, 0, 0, .25));
     }
