@@ -44,13 +44,12 @@ header img:hover {
     justify-content: center;
     align-items: center;
     height: 37rem;
-    padding: 20px;
+    padding: 2rem;
     box-sizing: border-box;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1);
     background-color: white;
-    max-width: 95%;
+    max-width: 97vw;
     width: 40rem;
-    padding: 1rem;
 }
 
 .warning-sing {
@@ -184,12 +183,14 @@ button:hover {
     font-size: 1.25rem;
 }
 
+/*
 .canvas-container {
     display: flex;
     justify-content: center;
     width: 95%;
     margin: 0 auto;
 }
+*/
 
 canvas {
     border: 1rem solid #ddd;
@@ -250,7 +251,7 @@ canvas {
     align-items: center;
     text-align: center;
     align-self: center;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 #text-footer {
@@ -278,8 +279,14 @@ canvas {
         margin-top: .45rem;
     }
 
-    footer {
-        margin-top: 1rem;
+    .calculator-container {
+        height: 35rem;
+        padding: .25rem;
+        width: 100rem;
+    }
+
+    .footer {
+        margin-top: 1.5rem;
     }
 
     #text-footer {
@@ -294,8 +301,5 @@ canvas {
         filter: drop-shadow(0 0 .15rem rgba(0, 0, 0, .25));
     }
 
-    .calculator-container {
-        height: 41rem;
-    }
 
 }
