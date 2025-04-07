@@ -46,9 +46,9 @@ function calculateVolume() {
             : `${metrostoFixed(2)}%`; // Dos cecimales para números flotantes
                  
         resultElement.innerHTML = `
-    <div class="dato-resultado"><img src="images/attention.svg" alt="Signo de alerta"><span class="cantidad-span" id="texto-atención" style="color: red">¡La altura ingresada excede la capacidad del tanque!</span></div>
-    <div class="dato-resultado"><span class="cantidad-texto-span">Máxima altura</span><span class="cantidad-span" style="color: blue">${metros} metros</span></div>
-    <div class="dato-resultado"><span class="cantidad-texto-span">Capacidad del tanque</span><span class="cantidad-span" style="color: green">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
+    <div class="dato-resultado"><img src="images/attention.svg" alt="Signo de alerta"><span class="cantidad-span" id="texto-atención" style="color: #c43f35">¡La altura ingresada excede la capacidad del tanque!</span></div>
+    <div class="dato-resultado"><span class="cantidad-texto-span">Máxima altura</span><span class="cantidad-span" style="color: #284173">${metros} metros</span></div>
+    <div class="dato-resultado"><span class="cantidad-texto-span">Capacidad del tanque</span><span class="cantidad-span" style="color: #ce813c">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
     `;
     } else {
         const percentageOccupied = (currentVolumeM3 / fullVolumeM3) * 100;
@@ -64,9 +64,9 @@ function calculateVolume() {
         }
 
         resultElement.innerHTML = `
-    <div class="dato-resultado"><span class="cantidad-texto-span">Cantidad actual</span><span class="cantidad-span" style="color: blue">${currentVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
-    <div class="dato-resultado"><span class="cantidad-texto-span">Capacidad total</span><span class="cantidad-span" style="color: green">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
-    <div class="dato-resultado"><span class="cantidad-texto-span">Porcentaje ocupado</span><span class="cantidad-span" style="color: orange">${formattedPercentage}</span></div>
+    <div class="dato-resultado"><span class="cantidad-texto-span">Cantidad actual</span><span class="cantidad-span" style="color: #284173">${currentVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
+    <div class="dato-resultado"><span class="cantidad-texto-span">Capacidad total</span><span class="cantidad-span" style="color: #ce813c">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
+    <div class="dato-resultado"><span class="cantidad-texto-span">Porcentaje ocupado</span><span class="cantidad-span" style="color: #40a4bc">${formattedPercentage}</span></div>
     `;
     }
     // Dibuja el tanque
