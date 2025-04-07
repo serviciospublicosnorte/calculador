@@ -224,11 +224,11 @@ canvas {
     margin-top: .85rem;
 }
 
-footer {
+.footer {
     align-items: center;
     text-align: center;
     align-self: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 #text-footer {
