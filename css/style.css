@@ -39,6 +39,26 @@ header img:hover {
 }
 
 .calculator-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 37rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1);
+    background-color: white;
+    max-width: 95%;
+    width: 40rem;
+    padding: 1rem;
+}
+
+.warning-sing {
+    max-height: 45%;
+}
+
+/*
+.calculator-container {
     font-family: 'Platform Medium';
     margin: 0;
     background-color: white;
@@ -46,12 +66,14 @@ header img:hover {
     border-radius: 0;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1);
     max-width: 95%;
+    height: 35rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 40rem;
     padding: 1rem;
 }
+*/
 
 /*
 h1 {
@@ -189,18 +211,7 @@ canvas {
 }
 
 #tankCanvas {
-    display: block;
-    margin: 0 auto;
-}
-
-.zona-calculo {
-    display: flex;
-    gap: 1rem;
-}
-
-.dato-resultado {
-    display: flex;
-    flex-direction: column;
+    display: block;4.09
     margin-bottom: 1rem;
 }
 
@@ -219,7 +230,7 @@ canvas {
 }
 
 #texto-atención {
-    font-size: 1.55rem;
+    font-size: 1.25rem;
     line-height: 1.1rem;
     margin-top: .85rem;
 }
@@ -246,9 +257,14 @@ canvas {
 }
 
 @media screen and (orientation: portrait) {
-    
+
     header img {
         transform: scale(1);
+    }
+
+    .calculator-container {
+        height: 36rem;
+         box-sizing: border-box;
     }
 
     #texto-atención {
