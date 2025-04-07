@@ -1,31 +1,31 @@
 function drawTank(diameter, length, fluidHeight) {
     const canvas = document.getElementById('tankCanvas');
     const ctx = canvas.getContext('2d');
-    const scale = 50; // Pixels per meter
+    const scale = 50; // Medidor de píxeles
 
-    // Clear canvas
+    // Resetea el canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Tank dimensions
+    // Establece el tamaño del tanque
     const tankWidth = diameter * scale;
     const tankHeight = diameter * scale;
-    const displayLength = Math.min(length * scale * 0.2, 100); // Reduced length for display
+    const displayLength = Math.min(length * scale * 0.2, 100); // Reduce la longitud
 
-    // CENTERING CALCULATION
-    const centerX = canvas.width / 2; // New: Get horizontal center
-    const centerY = canvas.height / 2; // Keep vertical center as before
+    // CENTRA EL CANVAS
+    const centerX = canvas.width / 2; // Obtiene el centro en horizontal
+    const centerY = canvas.height / 2; // Obtiene el centro en vertical
 
-    // Draw tank
+    // Dibuja el tanque
     ctx.strokeStyle = '#2c3e50';
     ctx.lineWidth = 2;
     ctx.fillStyle = 'rgba(52, 152, 219, 0.3)';
 
-    // Main cylinder (now centered)
+    // Cilindro
     ctx.beginPath();
     ctx.ellipse(centerX, centerY, tankWidth / 2, tankHeight / 2, 0, 0, Math.PI * 2);
     ctx.stroke();
 
-    // Fluid fill (centered)
+    // Fluido
     if (fluidHeight > 0) {
         const fluidPixels = fluidHeight * scale;
         const fillHeight = tankHeight / 2 - fluidPixels;
@@ -36,7 +36,7 @@ function drawTank(diameter, length, fluidHeight) {
         ctx.fill();
     }
 
-    // End caps (centered)
+    // Corchetes en los costados
     ctx.beginPath();
     ctx.moveTo(centerX - tankWidth / 2, centerY - tankHeight / 2);
     ctx.lineTo(centerX - tankWidth / 2 - displayLength, centerY - tankHeight / 2);
