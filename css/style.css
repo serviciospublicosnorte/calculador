@@ -194,7 +194,6 @@ canvas {
 #tankCanvas {
     display: block;
     margin: 0 auto;
-    2;
 }
 
 .zona-calculo {
@@ -224,6 +223,8 @@ canvas {
 
 #texto-atención {
     font-size: 1.55rem;
+    line-height: 1.1rem;
+    margin-top: .85rem;
 }
 
 footer {
@@ -253,6 +254,10 @@ footer {
 
     #texto-atención {
         font-size: 1.15rem;
+    }
+
+    #texto-atención {
+        margin-top: .45rem;
     }
 
     footer {
