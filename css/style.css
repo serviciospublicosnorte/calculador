@@ -44,7 +44,7 @@ header img:hover {
     justify-content: center;
     align-items: center;
     height: 37rem;
-    padding: 1rem;
+    padding: 20px;
     box-sizing: border-box;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1);
     background-color: white;
@@ -211,7 +211,18 @@ canvas {
 }
 
 #tankCanvas {
-    display: block;4.09
+    display: block;
+    margin: 0 auto;
+}
+
+.zona-calculo {
+    display: flex;
+    gap: 1rem;
+}
+
+.dato-resultado {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 1rem;
 }
 
@@ -262,11 +273,6 @@ canvas {
         transform: scale(1);
     }
 
-    .calculator-container {
-        height: 36rem;
-         box-sizing: border-box;
-    }
-
     #texto-atención {
         font-size: 1.15rem;
         margin-top: .45rem;
@@ -286,6 +292,10 @@ canvas {
         margin-top: .5rem;
         margin-left: .5rem;
         filter: drop-shadow(0 0 .15rem rgba(0, 0, 0, .25));
+    }
+
+    .calculator-container {
+        height: 41rem;
     }
 
 }
