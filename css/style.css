@@ -231,6 +231,7 @@ canvas {
     padding: 0.25rem;
     border-radius: 0;
     min-width: 12rem;
+    max-width: fit-content;
 }
 
 .dato-resultado img {
