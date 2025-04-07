@@ -22,15 +22,16 @@ body {
 }
 
 header {
-    padding: .1rem;
+    margin-top: 0;
     margin-bottom: 1rem;
 }
 
 header img {
+    margin-top: 0;
     transform: scale(.65);
     max-width: 90vw;
     height: auto;
-    filter: drop-shadow(0 0 .5rem rgba(0, 0, 0, .25));
+    filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 1));
 }
 
 header img:hover {
@@ -191,9 +192,7 @@ canvas {
 
 #tankCanvas {
     display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
+    margin: 0 auto;2;
 }
 
 .zona-calculo {
@@ -220,6 +219,24 @@ canvas {
     font-family: 'Platform Bold';
     font-size: 1.8rem;
     font-weight: bold !important;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    margin-top: 4rem;
+}
+
+#text-footer {
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+
+#image-footer {
+    max-width: 20%;
+    margin-left: .5rem;
+    filter: drop-shadow(0 0 .25rem rgba(0, 0, 0, .5));
 }
 
 @media screen and (orientation: portrait) {
