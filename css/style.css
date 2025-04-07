@@ -192,7 +192,8 @@ canvas {
 
 #tankCanvas {
     display: block;
-    margin: 0 auto;2;
+    margin: 0 auto;
+    2;
 }
 
 .zona-calculo {
@@ -214,11 +215,14 @@ canvas {
     align-self: center;
 }
 
-
 .cantidad-span {
     font-family: 'Platform Bold';
     font-size: 1.8rem;
     font-weight: bold !important;
+}
+
+#texto-atención {
+    font-size: 1.55rem;
 }
 
 footer {
@@ -234,9 +238,9 @@ footer {
 }
 
 #image-footer {
-    max-width: 20%;
+    width: 20rem;
     margin-left: .5rem;
-    filter: drop-shadow(0 0 .25rem rgba(0, 0, 0, .5));
+    filter: drop-shadow(0 0 .20rem rgba(0, 0, 0, .5));
 }
 
 @media screen and (orientation: portrait) {
@@ -244,7 +248,22 @@ footer {
         transform: scale(1);
     }
 
-    h1 {
-        font-size: 1.65rem;
+    #texto-atención {
+        font-size: 1.15rem;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+
+    #text-footer {
+        font-size: 1rem;
+        margin-right: .05rem;
+    }
+
+    #image-footer {
+        max-width: 65%;
+        margin-left: .5rem;
+        filter: drop-shadow(0 0 .15rem rgba(0, 0, 0, .25));
     }
 }
