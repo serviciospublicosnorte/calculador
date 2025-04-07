@@ -53,7 +53,7 @@ header img:hover {
 }
 
 .warning-sing {
-    max-height: 45%;
+    max-height: 50%;
 }
 
 /*
@@ -231,12 +231,12 @@ canvas {
     padding: 0.25rem;
     border-radius: 0;
     min-width: 12rem;
-    max-width: fit-content;
+    max-width: min-content;
 }
 
 .dato-resultado img {
     display: flex;
-    max-width: 10%;
+    max-width: 20%;
     align-items: center;
     text-align: center;
     align-self: center;
@@ -249,9 +249,9 @@ canvas {
 }
 
 #texto-atención {
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     line-height: 1.1rem;
-    margin-top: .55rem;
+    margin-top: .30rem;
 }
 
 .footer {
