@@ -50,6 +50,7 @@ header img:hover {
     flex-direction: column;
     align-items: center;
     width: 40rem;
+    padding: 1rem;
 }
 
 h1 {
