@@ -41,15 +41,19 @@ function calculateVolume() {
 
     if (fluidHeight > radius * 2) {
         metros = (radius * 2);
-            
+
         metros ? `${metros.toFixed(0)}%` // Elimina los decimales para los enteros
             : `${metrostoFixed(2)}%`; // Dos cecimales para números flotantes
-                 
+
+
         resultElement.innerHTML = `
     <div class="dato-resultado-warning"><img class="warning-sing" src="images/attention.svg" alt="Signo de alerta"><span class="cantidad-span" id="texto-atención" style="color: #c43f35">¡Altura ingresada excede capacidad!</span></div>
     <div class="dato-resultado-metros"><span class="cantidad-texto-span">Máxima altura</span><span class="cantidad-span" style="color: #284173">${metros} metros</span></div>
     <div class="dato-resultado"><span class="cantidad-texto-span">Capacidad del tanque</span><span class="cantidad-span" style="color: #ce813c">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
     `;
+        // Ver comentario del ELSE para comprender este engéndro
+        let warningClass = document.getElementsByClassName("dato-resultado-warning")[0];
+        warningClass.style.display = "flex";
     } else {
         const percentageOccupied = (currentVolumeM3 / fullVolumeM3) * 100;
         let formattedPercentage;
@@ -64,10 +68,19 @@ function calculateVolume() {
         }
 
         resultElement.innerHTML = `
+    
+    <div class="dato-resultado-warning"><img class="warning-sing" src="images/attention.svg" alt="Signo de alerta"><span class="cantidad-span" id="texto-atención" style="color: #c43f35">¡Altura ingresada excede capacidad!</span></div>
     <div class="dato-resultado"><span class="cantidad-texto-span">Cantidad actual</span><span class="cantidad-span" style="color: #284173">${currentVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
     <div class="dato-resultado"><span class="cantidad-texto-span">Capacidad total</span><span class="cantidad-span" style="color: #ce813c">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
     <div class="dato-resultado"><span class="cantidad-texto-span">Porcentaje ocupado</span><span class="cantidad-span" style="color: #40a4bc">${formattedPercentage}</span></div>
     `;
+        // Cargo dos veces acá en el verdadero y en el falso el "dato-resultado-warning" porque al usar "display" con "none" y "flex", se elimina el retardo que ocurría al cargar la imagen "attention.svg" la primera vez.
+        // Si bien una vez que se cargaba en la cache ya no volvía a pasar hasta que se vaciara la cache, me irritaba bastante la verdad. Seguro hay varias formas mucho más inteligentes y elegantes de resolver ese retardo
+        // feo de la primera carga, pero atarlo así con alambre me funcionó y yo no soy Gladys Rizzo ni Noemí García y esto no es Clementina, que tanto joder. Quizás debería mandar la línea directamente en el ".html" y
+        // dejar acá solo el  "warningClass.style.display =", pero me pareció un toque menos sucio dejarlo así como está.
+
+        let warningClass = document.getElementsByClassName("dato-resultado-warning")[0];
+        warningClass.style.display = "none";
     }
     // Dibuja el tanque
     drawTank(radius * 2, length, fluidHeight);
