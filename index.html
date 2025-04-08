@@ -13,45 +13,49 @@
 </head>
 
 <body>
+
     <header>
         <div class="logo">
             <img src="images/header.png" id="image-header" alt="Imagen del header">
         </div>
     </header>
 
-    <div class="calculator-container">
+    <main>
 
-        <div class="input-section">
-            <div class="input-group">
-                <label for="radius">Radio del tanque (m)</label>
-                <input type="number" id="radius" value="1.03" step="0.01" min="0" max="10">
+        <div class="calculator-container">
+
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="radius">Radio del tanque (m)</label>
+                    <input type="number" id="radius" value="1.03" step="0.01" min="0" max="10">
+                </div>
+
+                <div class="input-group">
+                    <label for="length">Longitud del tanque (m)</label>
+                    <input type="number" id="length" value="3.6" step="0.01" min="0" max="10">
+                </div>
+
+                <div class="input-group">
+                    <label for="fluidHeight">Altura de carga (m)</label>
+                    <input type="number" id="fluidHeight" value="2.06" step="0.01" min="0">
+                </div>
+
+                <div id="zona-calculo">
+                </div>
             </div>
 
-            <div class="input-group">
-                <label for="length">Longitud del tanque (m)</label>
-                <input type="number" id="length" value="3.6" step="0.01" min="0" max="10">
-            </div>
-
-            <div class="input-group">
-                <label for="fluidHeight">Altura de carga (m)</label>
-                <input type="number" id="fluidHeight" value="2.06" step="0.01" min="0">
-            </div>
-
-            <div id="zona-calculo">
+            <div class="results-section">
+                <div id="result"></div>
+                <!--<canvas id="tankCanvas" width="300" height="200"></canvas>-->
             </div>
         </div>
 
-        <div class="results-section">
-            <div id="result"></div>
-            <!--<canvas id="tankCanvas" width="300" height="200"></canvas>-->
-        </div>
-
-    </div>
+    </main>
 
     <footer>
         <p class="footer-space"> </p>
         <div class="footer-element">
-               <span id="text-footer">Todos los derechos reservados</span><img src="images/logo.png" id="image-footer"
+            <span id="text-footer">Todos los derechos reservados</span><img src="images/logo.png" id="image-footer"
                 alt="Imagen del footer">
         </div>
     </footer>
@@ -59,12 +63,14 @@
     <script src="js/calculator.js"></script>
     <script src="js/drawing.js"></script>
     <script src="js/reload.js"></script>
+    <!--<script src="js/footer.js"></script>-->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Inicializa el calculador
             setupCalculator();
         });
     </script>
+
 </body>
 
 </html>
