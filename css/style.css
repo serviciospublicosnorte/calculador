@@ -244,7 +244,8 @@ canvas {
     gap: 0rem;
 }
 
-.dato-resultado, .dato-resultado-metros {
+.dato-resultado,
+.dato-resultado-metros {
     display: flex;
     flex-direction: column;
     margin-bottom: .6rem;
@@ -299,25 +300,23 @@ footer {
 .footer-element {
     height: 100%;
     text-align: center;
-    margin-top: 2rem;
-    align-self: flex-end;
+    margin-top: 1.25rem;
 }
 
 #text-footer {
     color: #303030;
-    margin-top: .15rem;
     font-size: 2rem;
-    margin-right: .5rem;
-    align-self: flex-end;
-}
+    margin-top: 0rem;
+    margin: .55rem;
+  }
 
 #image-footer {
-    /*margin-top: .5rem;*/
-    margin-top: .15rem;
     width: 20rem;
-    margin-left: .5rem;
+    margin: .55rem;
+    margin-bottom: 0rem;
     filter: drop-shadow(0 0 .20rem rgba(0, 0, 0, .5));
     align-self: flex-end;
+
 }
 
 @media screen and (orientation: portrait) {
@@ -343,14 +342,11 @@ footer {
 
     #text-footer {
         font-size: 1.1rem;
-        margin-right: .05rem;
     }
 
     #image-footer {
-        max-width: 65%;
-        margin-top: .5rem;
-        margin-left: .5rem;
-        filter: drop-shadow(0 0 .15rem rgba(0, 0, 0, .25));
+        max-width: 62%;
+        filter: drop-shadow(0 0 .1rem rgba(0, 0, 0, .25));
     }
 
 }
