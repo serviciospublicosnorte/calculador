@@ -308,13 +308,12 @@ footer {
     font-size: 2rem;
     margin-top: 0rem;
     margin: .55rem;
-  }
+}
 
 #image-footer {
     width: 13rem;
     margin: .55rem;
     margin-bottom: 0rem;
-    /*filter: drop-shadow(0 0 .20rem rgba(0, 0, 0, .5));*/
     align-self: flex-end;
 
 }
@@ -346,7 +345,6 @@ footer {
 
     #image-footer {
         max-width: 90%;
-        /*filter: drop-shadow(0 0 .1rem rgba(0, 0, 0, .25));*/
     }
 
 }
