@@ -311,10 +311,10 @@ footer {
   }
 
 #image-footer {
-    width: 20rem;
+    width: 13rem;
     margin: .55rem;
     margin-bottom: 0rem;
-    filter: drop-shadow(0 0 .20rem rgba(0, 0, 0, .5));
+    /*filter: drop-shadow(0 0 .20rem rgba(0, 0, 0, .5));*/
     align-self: flex-end;
 
 }
@@ -341,12 +341,12 @@ footer {
     }
 
     #text-footer {
-        font-size: 1.1rem;
+        font-size: 2rem;
     }
 
     #image-footer {
-        max-width: 62%;
-        filter: drop-shadow(0 0 .1rem rgba(0, 0, 0, .25));
+        max-width: 90%;
+        /*filter: drop-shadow(0 0 .1rem rgba(0, 0, 0, .25));*/
     }
 
 }
