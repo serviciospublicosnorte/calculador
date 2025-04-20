@@ -76,8 +76,8 @@ function calculateVolume() {
     `;
         /* Cargo dos veces acá en el verdadero y en el falso el "dato-resultado-warning" porque al usar "display" con "none" y "flex", se elimina el retardo que ocurría al cargar la imagen "attention.svg" la primera vez.
         Si bien una vez que se cargaba en la cache ya no volvía a pasar hasta que se vaciara otra vez la cache, era bastante notorio la verdad. Seguro hay varias formas mucho más inteligentes y elegantes de resolver ese
-        retardo molesto de la primera carga, pero atarlo así con alambre me funcionó y yo no soy Gladys Rizzo ni Noemí García y esto no es Clementina, que tanto joder. Quizás debería mandar la línea directamente en el ".html" y
-        dejar acá solo el  "warningClass.style.display =", pero me pareció un toque menos sucio dejarlo así como está. */
+        retardo molesto de la primera carga, pero atarlo así con alambre me funcionó y yo no soy Gladys Rizzo ni Noemí García y esto no es Clementina, que tanto joder. Quizás debería mandar la línea directamente en el
+        ".html" y dejar acá solo el  "warningClass.style.display =", pero me pareció un toque menos sucio dejarlo así como está. */
         let warningClass = document.getElementsByClassName("dato-resultado-warning")[0];
         warningClass.style.display = "none";
     }
