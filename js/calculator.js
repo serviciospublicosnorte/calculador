@@ -81,6 +81,7 @@ function calculateVolume() {
         let warningClass = document.getElementsByClassName("dato-resultado-warning")[0];
         warningClass.style.display = "none";
     }
+
     // Dibuja el tanque
     drawTank(radius * 2, length, fluidHeight);
 }
