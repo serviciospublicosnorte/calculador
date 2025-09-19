@@ -70,9 +70,12 @@ header img:hover {
     /*box-sizing: content-box;*/
 }
 
+
 .warning-sing {
     max-height: 50%;
+    margin: .25rem;
 }
+
 
 /*
 .calculator-container {
@@ -276,11 +279,16 @@ canvas {
 .dato-resultado-warning {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
     margin-bottom: .6rem;
     border: .15rem solid #30303050;
-    padding: 0.25rem;
     border-radius: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
+    padding: .75rem;
+    padding-top: .5rem;
 }
 
 .dato-resultado-warning img {
@@ -299,8 +307,10 @@ canvas {
 
 #texto-atención {
     font-size: 1.45rem;
-    line-height: 1.1rem;
-    margin-top: .30rem;
+    line-height: 1.2rem;
+    margin: 0;
+    /*margin-bottom: .5rem;*/
+    /*margin-top: .75rem;*/
 }
 
 footer {
