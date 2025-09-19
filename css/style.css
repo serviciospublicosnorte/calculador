@@ -288,7 +288,7 @@ canvas {
     max-width: 20%;
     align-items: center;
     text-align: center;
-    align-s>*elf: center;
+    align-self: center;
 }
 
 .cantidad-span {
