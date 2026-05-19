@@ -43,7 +43,6 @@ function drawTank(diameter, length, fluidHeight) {
     ctx.lineTo(centerX - tankWidth / 2 - displayLength, centerY + tankHeight / 2);
     ctx.lineTo(centerX - tankWidth / 2, centerY + tankHeight / 2);
     ctx.stroke();
-
     ctx.beginPath();
     ctx.moveTo(centerX + tankWidth / 2, centerY - tankHeight / 2);
     ctx.lineTo(centerX + tankWidth / 2 + displayLength, centerY - tankHeight / 2);
