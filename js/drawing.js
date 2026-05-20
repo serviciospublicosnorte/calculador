@@ -11,7 +11,7 @@ function drawTank(diameter, length, fluidHeight) {
     const tankHeight = diameter * scale;
     const displayLength = Math.min(length * scale * 0.2, 100); // Reduce la longitud
 
-    // CENTRA EL CANVAS
+    // Centra el canvas
     const centerX = canvas.width / 2; // Obtiene el centro en horizontal
     const centerY = canvas.height / 2; // Obtiene el centro en vertical
 
