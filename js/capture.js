@@ -63,7 +63,6 @@ async function capturarResultado() {
         a.click();
         URL.revokeObjectURL(a.href);
     });
-
 }
 
 document.getElementById("btnCaptura")
