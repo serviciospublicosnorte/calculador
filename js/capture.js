@@ -21,7 +21,6 @@ async function capturarResultado() {
         }
     });
 
-
     const textoClipboard =
         `Hoy ${dia}-${mes}-${anio}, arrancamos con ${alturaCm} cm que son ${litros} aproximadamente`;
 
