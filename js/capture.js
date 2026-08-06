@@ -65,5 +65,6 @@ async function capturarResultado() {
     });
 }
 
+
 document.getElementById("btnCaptura")
     .addEventListener("click", capturarResultado);
