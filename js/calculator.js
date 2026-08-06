@@ -83,7 +83,7 @@ function calculateVolume() {
     }
 
     // Dibuja el tanque
-    drawTank(radius * 2, length, fluidHeight);
+    //drawTank(radius * 2, length, fluidHeight);
 }
 
 function calculateLiquidVolume(radius, length, fluidHeight) {
