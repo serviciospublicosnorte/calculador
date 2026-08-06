@@ -5,9 +5,19 @@ async function capturarResultado() {
     const dia = String(fecha.getDate()).padStart(2, "0");
     const mes = String(fecha.getMonth() + 1).padStart(2, "0");
     const anio = fecha.getFullYear();
-    const alturaCm = 
+    const alturaCm =
         (parseFloat(document.getElementById("fluidHeight").value) * 100)
-        .toFixed(0);
+            .toFixed(0);
+
+    const input = document.getElementById("fluidHeight");
+    input.style.textAlign = "botto";
+    input.style.fontSize = "1.25rem";
+    input.style.fontWeight = "bold";
+    input.style.lineHeight = "normal";
+    input.style.padding = ".2rem 0";
+    input.style.height = "auto";
+    input.style.paddingBottom = "-1rem";
+    input.style.boxSizing = "border-box";
 
     // *** cantidad de litros *** //
     let litros = "0";
@@ -17,7 +27,7 @@ async function capturarResultado() {
         if (texto.includes("Cantidad actual")) {
             litros =
                 resultado.querySelector(".cantidad-span")
-                .innerText;
+                    .innerText;
         }
     });
 
@@ -37,23 +47,21 @@ async function capturarResultado() {
         scale: 2,
         backgroundColor: "#ffffff"
     });
-    canvas.toBlob(async function(blob){
-     const file = new File(
+    canvas.toBlob(async function (blob) {
+        const file = new File(
             [blob],
             "tanque.png",
             { type: "image/png" }
         );
         // *** Android / iPhone *** //
         if (navigator.canShare &&
-            navigator.canShare({ files:[file] }))
-        {
+            navigator.canShare({ files: [file] })) {
             await navigator.share({
-                files:[file],
-                title:"Resultado del tanque"
+                files: [file],
+                title: "Resultado del tanque"
             });
             return;
         }
-
         //  *** Descarga automáticamente la captura *** /
         const nombreArchivo =
             `resultado_tanque_de_combustible_${dia}-${mes}-${anio}.png`;
@@ -62,6 +70,7 @@ async function capturarResultado() {
         a.download = nombreArchivo;
         a.click();
         URL.revokeObjectURL(a.href);
+        window.location.reload();
     });
 }
 

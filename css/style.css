@@ -404,3 +404,13 @@ footer {
 .capture-button:hover {
 	background: #1e3155;
 }
+
+.input-captura {
+    text-align: bottom;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: normal;
+    padding: 1rem 0;
+    height: auto;
+    box-sizing: border-box;
+}
