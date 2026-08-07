@@ -9,8 +9,9 @@ async function capturarResultado() {
         (parseFloat(document.getElementById("fluidHeight").value) * 100)
             .toFixed(0);
 
-    const input = document.getElementById("fluidHeight");
+
     /*
+    const input = document.getElementById("fluidHeight");
     input.style.textAlign = "center";
     input.style.fontSize = "1.25rem";
     input.style.fontWeight = "bold";
@@ -19,8 +20,12 @@ async function capturarResultado() {
     input.style.height = "auto";
     //input.style.paddingBottom = "-1rem";
     input.style.boxSizing = "border-box";
-    */   
-    
+    */
+
+
+    const input = document.getElementById("fluidHeightGroup");
+    input.style.marginTop = ".5rem";
+
     // *** cantidad de litros *** //
     let litros = "0";
     const resultados = document.querySelectorAll(".dato-resultado");
