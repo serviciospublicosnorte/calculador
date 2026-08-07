@@ -66,7 +66,11 @@
 							<div id="result"></div>
 							<!--<canvas id="tankCanvas" width="300" height="200"></canvas>-->
 						</div>
-						<button id="btnCaptura">📷 CAPTURAR</button>
+						<button id="btnCaptura">	<img
+							src="images/camera.png"
+							id="camera-emoji"
+							alt="Ícono de cámara para botón de captura"
+						/> <span>CAPTURAR</span></button>
 					</div>
 				</div>
 			</main>
@@ -83,7 +87,8 @@
 				</div>
 			</footer>
 
-			<script src="https://cdn.jsdelivr.net/npm/html2canvas@latest/dist/html2canvas.min.js"></script>
+			<!--script src="https://cdn.jsdelivr.net/npm/html2canvas@latest/dist/html2canvas.min.js"></script-->
+			<script src="https://unpkg.com/html-to-image"></script>
 			<script src="js/capture.js"></script>
 			<script src="js/calculator.js"></script>
 			<script src="js/drawing.js"></script>

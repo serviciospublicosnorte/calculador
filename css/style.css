@@ -25,7 +25,7 @@ main {
 
 body {
 	font-family: "Platform Medium";
-   	background-color: #eaeaea;
+	background-color: #eaeaea;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -70,11 +70,18 @@ header img:hover {
 	/*box-sizing: content-box;*/
 }
 
-button,.btnCaptura{
-    display: flex;
-	flex-direction: column;
+button,
+.btnCaptura {
+	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	img {
+		margin-right: 0.5rem;
+	}
+	span{
+		text-shadow: 0 0 .25rem rgba(0, 0, 0, 1);
+	}
 }
 
 .warning-sing {
@@ -171,7 +178,7 @@ label {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-    text-align: center;
+	text-align: center;
 	gap: 0.5rem;
 	width: auto;
 	height: auto;
@@ -195,21 +202,22 @@ span .cantidad-texto-span {
 }
 
 button {
-	background-color:  #284173;
+	background-color: #284173;
+	border: 0.2rem solid hsl(220, 48%, 10%);
 	color: white;
-	border: none;
-	padding: 10px 15px;
-	border-radius: 0;
+		padding: 10px 15px;
+	border-radius: 1rem;
 	cursor: pointer;
-    font-family: "Platform Bold"!important;
-    font-size: 1.25rem;
+	font-family: "Platform Bold" !important;
+	font-size: 1.25rem;
 	transition: background-color 0.3s;
-    letter-spacing: 0.1rem;
+	letter-spacing: 0.05rem;
 	/*align-self: flex-start;*/
 }
 
 button:hover {
-	background-color: #2980b9;
+	background-color:hsl(220, 48%, 50%);
+	border: 0.2rem solid hsl(220, 48%, 10%);
 	gap: 0rem;
 }
 
@@ -230,7 +238,7 @@ button:hover {
 	align-items: center;
 	font-size: 1.25rem;
 	margin: 0;
-    margin-top: 0.75rem;
+	margin-top: 0.75rem;
 }
 
 /*
@@ -406,11 +414,16 @@ footer {
 }
 
 .input-captura {
-    text-align: bottom;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: normal;
-    padding: 1rem 0;
-    height: auto;
-    box-sizing: border-box;
+	text-align: bottom;
+	font-size: 1rem;
+	font-weight: bold;
+	line-height: normal;
+	padding: 1rem 0;
+	height: auto;
+	box-sizing: border-box;
+}
+
+#camera-emoji {
+	width: 1.5rem;
+	height: auto;
 }
