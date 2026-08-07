@@ -9,6 +9,8 @@
 				Calculadora del volumen del tanque - Subsecretaría de Servicios Públicos
 				Zona Norte - La Matanza
 			</title>
+			<link rel="manifest" href="/manifest.json" />
+			<meta name="theme-color" content="#ffffff" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="icon" href="favicon.png" type="image/png" />
 		</head>
@@ -66,11 +68,14 @@
 							<div id="result"></div>
 							<!--<canvas id="tankCanvas" width="300" height="200"></canvas>-->
 						</div>
-						<button id="btnCaptura">	<img
-							src="images/camera.png"
-							id="camera-emoji"
-							alt="Ícono de cámara para botón de captura"
-						/> <span>CAPTURAR</span></button>
+						<button id="btnCaptura">
+							<img
+								src="images/camera.png"
+								id="camera-emoji"
+								alt="Ícono de cámara para botón de captura"
+							/>
+							<span>CAPTURAR</span>
+						</button>
 					</div>
 				</div>
 			</main>
@@ -99,6 +104,11 @@
 					// Inicializa el calculador
 					setupCalculator();
 				});
+			</script>
+			<script>
+				if ("serviceWorker" in navigator) {
+					navigator.serviceWorker.register("js/sw.js");
+				}
 			</script>
 		</body>
 	</html>
