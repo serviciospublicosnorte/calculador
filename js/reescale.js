@@ -10,8 +10,8 @@ const scaleCalculator = () => {
     const imageHeader = document.querySelector('#image-header');
     const calculator = document.querySelector('.calculator-container');
 
-    if (screen.height < 854 && window.innerWidth > window.innerHeight) {
-        const baseHeight = 853;
+    if (screen.height <= 900 && window.innerWidth > window.innerHeight) {
+        const baseHeight = 900;
 
         const scale = Math.round((screen.height / baseHeight) * 100) / 100;
         const widthScale = Math.round(100 / scale);
