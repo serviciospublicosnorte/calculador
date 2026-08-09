@@ -97,7 +97,7 @@ async function capturarResultado() {
     document.body.removeChild(a);
 
     URL.revokeObjectURL(url);
-
+    input.style.marginTop = ".5rem";
     window.location.reload();
 }
 
