@@ -1,7 +1,7 @@
 function syncHeights() {
     const resultadoElements = document.querySelectorAll('.dato-resultado');
     const warningElements = document.querySelectorAll('.dato-resultado-warning');
-
+    /*
     if (resultadoElements.length > 0) {
         // Obtiene la altura del elemento "resultado" (máx altura de ser necesario)
         const resultadoHeight = resultadoElements[0].offsetHeight + 'px';
@@ -10,7 +10,7 @@ function syncHeights() {
         warningElements.forEach(el => {
             el.style.height = resultadoHeight;
         });
-    }
+    }*/
 }
 
 // Arranca en la carga inicial

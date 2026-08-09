@@ -201,13 +201,14 @@ input {
 
 span .cantidad-texto-span {
 	font-family: "Platform Medium" !important;
+	line-height: 1!important;
 }
 
 button {
 	background-color: #284173;
 	border: 0.2rem solid hsl(220, 48%, 10%);
 	color: white;
-	padding: 10px 15px;
+	padding: 10px 15px!important;
 	border-radius: 1rem;
 	cursor: pointer;
 	font-family: "Platform Bold" !important;
@@ -287,12 +288,14 @@ canvas {
 .dato-resultado-metros {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 0.6rem;
+	margin-bottom: 0.55rem!important;
 	border: 0.15rem solid #30303050;
 	/*padding: 0.1rem;*/
 	border-radius: 0;
 	min-width: 12rem;
 	box-sizing: content-box;
+	height: 55.54px !important;
+	max-height: 55.54px !important;
 }
 
 div.dato-resultado-warning {
@@ -302,17 +305,18 @@ div.dato-resultado-warning {
 	align-items: center;
 	text-align: center;
 	align-self: center;
-	margin-bottom: 0.6rem;
+	margin-bottom: 0.55rem!important;
 	border: 0.15rem solid #30303050;
 	border-radius: 0;
 	box-sizing: content-box;
-	height: 63.03px !important;
-	max-height: 61.9px !important;
+	height: 55.54px !important;
+	max-height: 55.54px !important;
 	/*height: fit-content!important;*/
 	padding: 0.0025rem !important;
 	padding-left: 0.75rem !important;
 	padding-right: 0.75rem !important;
 	/*padding-top: 0.5rem;*/
+	line-height: 1!important;
 }
 
 .dato-resultado-warning img {
@@ -327,6 +331,13 @@ div.dato-resultado-warning {
 	font-family: "Platform Bold";
 	font-size: 2rem;
 	font-weight: bold !important;
+	display: flex!important;
+	flex-direction: column!important;
+	justify-content: center!important;
+	align-items: center!important;
+	text-align: center!important;
+	align-self: center!important;
+	line-height: 1!important;
 }
 
 #texto-atención {
