@@ -47,7 +47,7 @@ function calculateVolume() {
 
 
         resultElement.innerHTML = `
-    <div class="dato-resultado-warning"><img class="warning-sing" src="images/attention.svg" alt="Signo de alerta"><span class="cantidad-span" id="texto-atención" style="color: #c43f35">¡Altura ingresada excede capacidad!</span></div>
+    <div class="dato-resultado-warning"><img class="warning-sign" src="images/attention.svg" alt="Signo de alerta"><span class="cantidad-span" id="texto-atención" style="color: #c43f35">¡Altura ingresada excede capacidad!</span></div>
     <div class="dato-resultado-metros"><span class="cantidad-texto-span">Máxima altura</span><span class="cantidad-span" style="color: #284173">${metros} metros</span></div>
     <div class="dato-resultado"><span class="cantidad-texto-span">Capacidad del tanque</span><span class="cantidad-span" style="color: #ce813c">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
     `;
