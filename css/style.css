@@ -87,7 +87,7 @@ button,
 }
 
 .warning-sign {
-	max-height: 50%;
+	max-height: 1.5rem;
 	margin: 0.05rem;
 }
 
@@ -306,10 +306,11 @@ div.dato-resultado-warning {
 	border: 0.15rem solid #30303050;
 	border-radius: 0;
 	box-sizing: content-box;
-	padding: 0rem !important;
-	/*height: 62.02px!important;*/
+	
+	height: 63.03px!important;
 	max-height: 62.03px!important;
 	/*height: fit-content!important;*/
+	padding: .005rem!important;
 	padding-left: 0.75rem !important;
 	padding-right: 0.75rem !important;
 	/*padding-top: 0.5rem;*/
