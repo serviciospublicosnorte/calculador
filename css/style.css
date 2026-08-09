@@ -441,7 +441,7 @@ footer {
   
 }
 */
-@media screen and (orientation: landscape) and (max-height: 853px) {
+@media screen and (orientation: landscape) and (max-height: 853px) and (hover: hover) and (pointer: fine) {
 	#image-header {
 		height: 11vh !important;
 	}
@@ -462,3 +462,5 @@ footer {
 		height: min-content !important;
 	}
 }
+
+
