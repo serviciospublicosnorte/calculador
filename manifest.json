@@ -1,7 +1,7 @@
 {
     "name": "Calculadora del volumen del tanque - MTZ",
     "short_name": "Calculador",
-    "start_url": "/",
+    "start_url": "/calculador/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
