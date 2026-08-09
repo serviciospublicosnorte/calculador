@@ -308,9 +308,9 @@ div.dato-resultado-warning {
 	box-sizing: content-box;
 	
 	height: 63.03px!important;
-	max-height: 62.03px!important;
+	max-height: 61.9px!important;
 	/*height: fit-content!important;*/
-	padding: .005rem!important;
+	padding: .0025rem!important;
 	padding-left: 0.75rem !important;
 	padding-right: 0.75rem !important;
 	/*padding-top: 0.5rem;*/
