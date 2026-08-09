@@ -14,14 +14,14 @@ html {
 	position: absolute;
 	left: 50%;
 	top: 0%;
-	max-height: 100vh;
+	/*max-height: 100vh;*/
 	transform: translate(-50%);
 }
 
 main {
 	max-width: 100vw;
 	scroll-behavior: hidden !important;
-	max-height: 100vh;
+	/*max-height: 100vh;*/
 }
 
 body {
@@ -353,7 +353,7 @@ footer {
 .footer-element {
 	height: 100%;
 	text-align: center;
-	margin-top: 2rem;
+	margin-top: 0.5rem;
 }
 
 .footer-element > * {
@@ -441,6 +441,7 @@ footer {
   
 }
 */
+
 /*
 @media screen and (orientation: landscape) and (max-height: 853px) and (hover: hover) and (pointer: fine) {
 	#image-header {
