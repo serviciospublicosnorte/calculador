@@ -306,11 +306,10 @@ div.dato-resultado-warning {
 	border: 0.15rem solid #30303050;
 	border-radius: 0;
 	box-sizing: content-box;
-	
-	height: 63.03px!important;
-	max-height: 61.9px!important;
+	height: 63.03px !important;
+	max-height: 61.9px !important;
 	/*height: fit-content!important;*/
-	padding: .0025rem!important;
+	padding: 0.0025rem !important;
 	padding-left: 0.75rem !important;
 	padding-right: 0.75rem !important;
 	/*padding-top: 0.5rem;*/
@@ -333,8 +332,8 @@ div.dato-resultado-warning {
 #texto-atención {
 	font-size: 1.25rem;
 	line-height: normal;
-	margin: 0!important;
-	padding:0!important;
+	margin: 0 !important;
+	padding: 0 !important;
 	/*margin-bottom: .5rem;*/
 	/*margin-top: .75rem;*/
 }
@@ -463,5 +462,3 @@ footer {
 		height: min-content !important;
 	}
 }
-
-
