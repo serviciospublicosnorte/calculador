@@ -33,8 +33,13 @@ function calculateVolume() {
     const currentVolumeM3 = calculateLiquidVolume(radius, length, fluidHeight);
 
     // Convierte a litros
+    /*
     const fullVolumeLiters = fullVolumeM3.toFixed(2) * 1000;
     const currentVolumeLiters = currentVolumeM3.toFixed(2) * 1000;
+    */
+    
+    const fullVolumeLiters = Math.trunc(fullVolumeM3 * 1000 * 100) / 100;
+    const currentVolumeLiters = Math.trunc(currentVolumeM3 * 1000 * 100) / 100;
 
     // Imprime los resultados
     const resultElement = document.getElementById('result');
