@@ -1,3 +1,17 @@
+function adjustNumber(value) {
+    /*
+    const lastDigit = Math.abs(value) % 10;
+     
+    if (lastDigit <= 2.5 && lastDigit >= 2 && value > 0) return value - 2;
+    if (lastDigit >= 7.5) return value + 2;
+    */
+    value = Math.abs(value);
+    
+    if (value >= 11998) return 12000;
+
+    return value;
+  }
+
 function setupCalculator() {
     const zonaCalculo = document.getElementById('zona-calculo');
     const inputs = ['radius', 'length', 'fluidHeight'];
@@ -40,6 +54,8 @@ function calculateVolume() {
     
     const fullVolumeLiters = Math.trunc(fullVolumeM3 * 1000 * 100) / 100;
     const currentVolumeLiters = Math.trunc(currentVolumeM3 * 1000 * 100) / 100;
+     
+    console.log(`Full Volume: ${fullVolumeLiters} liters, Current Volume: ${currentVolumeLiters} liters`);
 
     // Imprime los resultados
     const resultElement = document.getElementById('result');
@@ -75,8 +91,8 @@ function calculateVolume() {
         resultElement.innerHTML = `
     
     <div class="dato-resultado-warning"><img class="warning-sing" src="images/attention.svg" alt="Signo de alerta"><span class="cantidad-span" id="texto-atención" style="color: #c43f35">¡Altura ingresada excede capacidad!</span></div>
-    <div class="dato-resultado"><span class="cantidad-texto-span">Cantidad actual</span><span class="cantidad-span" style="color: #284173">${currentVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
-    <div class="dato-resultado"><span class="cantidad-texto-span">Capacidad total</span><span class="cantidad-span" style="color: #ce813c">${fullVolumeLiters.toFixed(0).toLocaleString().trim()} litros</span></div>
+    <div class="dato-resultado"><span class="cantidad-texto-span">Cantidad actual</span><span class="cantidad-span" style="color: #284173">${adjustNumber(currentVolumeLiters).toFixed(0).toLocaleString().trim()} litros</span></div>
+    <div class="dato-resultado"><span class="cantidad-texto-span">Capacidad total</span><span class="cantidad-span" style="color: #ce813c">${adjustNumber(fullVolumeLiters).toFixed(0).toLocaleString().trim()} litros</span></div>
     <div class="dato-resultado"><span class="cantidad-texto-span">Porcentaje ocupado</span><span class="cantidad-span" style="color: #40a4bc">${formattedPercentage}</span></div>
     `;
         /* Cargo dos veces acá en el verdadero y en el falso el "dato-resultado-warning" porque al usar "display" con "none" y "flex", se elimina el retardo que ocurría al cargar la imagen "attention.svg" la primera vez.
@@ -86,7 +102,7 @@ function calculateVolume() {
         let warningClass = document.getElementsByClassName("dato-resultado-warning")[0];
         warningClass.style.display = "none";
     }
-
+    
     // Dibuja el tanque
     //drawTank(radius * 2, length, fluidHeight);
 }
