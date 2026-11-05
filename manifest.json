@@ -1,15 +1,50 @@
+
 {
+  "id": "/calculador/",
   "name": "Calculadora del volumen del tanque - MTZ",
   "short_name": "Calculador",
+  "description": "Calculadora del volumen de tanques de almacenamiento.",
   "start_url": "/calculador/",
+  "scope": "/calculador/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
+
   "icons": [
     {
-      "src": "favicon.png",
-      "sizes": "128x128",
-      "type": "image/png"
+      "src": "/calculador/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/calculador/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/calculador/icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "/calculador/screenshots/mobile.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Calculadora de volumen de tanque en móvil"
+    },
+    {
+      "src": "/calculador/screenshots/desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Calculadora de volumen de tanque en escritorio"
     }
   ]
 }
